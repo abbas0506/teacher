@@ -1,0 +1,24 @@
+// flex : col size and responsiveness
+.flex {
+    display: flex;
+    & .w-30 {
+        flex-basis: 30%;
+    }
+    & .w-33 {
+        flex-basis: 33.33%;
+    }
+    & .w-50 {
+        flex-basis: 50%;
+    }
+    & .w-70 {
+        flex-basis: 70%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .flex {
+        &.responsive {
+            display: block;
+        }
+    }
+}

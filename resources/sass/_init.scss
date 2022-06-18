@@ -1,0 +1,76 @@
+* {
+    /*padding will not increase element size  */
+    box-sizing: border-box;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/Montserrat/Montserrat-VariableFont_wght.ttf');
+}
+
+body {
+    color: #555;
+    font-family: 'Montserrat';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #222;
+}
+
+p {
+    line-height: 1.6;
+}
+
+section {
+    margin-block-end: 50px;
+}
+
+section.page {
+    max-width: 100%;
+    height: 100vh;
+}
+
+.p-5 {
+    padding: 20px;
+}
+
+.flexbox-50 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: solid 1px #777;
+}
+
+.centered {
+    margin: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.background-image-fixed {
+    background-attachment: fixed;
+}
+
+.mr-auto {
+    margin-left: auto;
+}
+
+.feather-small {
+    width: 24px;
+    height: 24px;
+}
+
+.feather-large {
+    width: 40px;
+    height: 40px;
+}

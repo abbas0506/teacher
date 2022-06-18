@@ -1,0 +1,245 @@
+* {
+  /*padding will not increase element size  */
+  box-sizing: border-box;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
+}
+body {
+  color: #555;
+  font-family: "Montserrat";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #222;
+}
+
+p {
+  line-height: 1.6;
+}
+
+section {
+  -webkit-margin-after: 50px;
+          margin-block-end: 50px;
+}
+
+section.page {
+  max-width: 100%;
+  height: 100vh;
+}
+
+.p-5 {
+  padding: 20px;
+}
+
+.flexbox-50 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border: solid 1px #777;
+}
+
+.centered {
+  margin: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.background-image-fixed {
+  background-attachment: fixed;
+}
+
+.mr-auto {
+  margin-left: auto;
+}
+
+.feather-small {
+  width: 24px;
+  height: 24px;
+}
+
+.feather-large {
+  width: 40px;
+  height: 40px;
+}
+
+.feather-small {
+  width: 24px;
+  height: 24px;
+}
+
+.feather-large {
+  width: 40px;
+  height: 40px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  list-style: none;
+  color: #ddd;
+  line-height: 60px;
+  padding: 0 24px;
+  background-color: rgb(25, 125, 112);
+}
+.navbar.light {
+  background-color: #fff;
+  color: rgb(25, 125, 112);
+  box-shadow: rgba(16, 77, 69, 0.2) 0px 20px 30px -20px;
+}
+.navbar .menu-icon {
+  display: none;
+}
+.navbar .site-logo {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.navbar .close-menu {
+  display: none;
+}
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.navbar .nav-links .nav-link {
+  padding: 0 10px;
+}
+.navbar .nav-links .nav-link::after {
+  content: "";
+  width: 0;
+  background: #ddd;
+  display: block;
+  height: 2px;
+  transition: 0.5s;
+}
+.navbar .nav-links .nav-link:hover::after {
+  width: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+  .navbar {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+  }
+  .navbar .menu-icon {
+    display: flex;
+    margin-right: 10px;
+  }
+  .navbar .close-menu {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+  }
+  .navbar .nav-links {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 100vh;
+    overflow: auto;
+    padding: 20px;
+    line-height: 40px;
+    text-align: left;
+    background-color: #d1e5e2;
+    color: rgb(25, 125, 112);
+    opacity: 0.9;
+    z-index: 5;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in-out;
+  }
+  .navbar .nav-links.slide-left {
+    transform: translateX(0) !important;
+  }
+  .responsive {
+    display: block;
+  }
+}
+.slider {
+  height: 92vh;
+}
+.slider img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+          animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.flex {
+  display: flex;
+}
+.flex .w-30 {
+  flex-basis: 30%;
+}
+.flex .w-33 {
+  flex-basis: 33.33%;
+}
+.flex .w-50 {
+  flex-basis: 50%;
+}
+.flex .w-70 {
+  flex-basis: 70%;
+}
+
+@media only screen and (max-width: 800px) {
+  .flex.responsive {
+    display: block;
+  }
+}
