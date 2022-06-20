@@ -1,20 +1,48 @@
-let slideIndex = 0;
-showSlides();
+$(document).ready(function() {
+    var index = 0;
+    var slides = [];
+    var dots = [];
+    $(".slider .slides .slide").each(function() {
+        slides.push($(this)); //make slides array
+    });
+    $(".slider .dots .dot").each(function() {
+        dots.push($(this)); //make dots array
+    });
 
-function showSlides() {
-    let i;
-    let slides = document.getElementsByClassName("slides");
-    let dots = document.getElementsByClassName("dot");
+    runslider()
 
-    //  for (i = 0; i < slides.length; i++) {
-    //      slides[i].style.display = "none";
-    //  }
-    //  slideIndex++;
-    //  if (slideIndex > slides.length) { slideIndex = 1 }
-    //  for (i = 0; i < dots.length; i++) {
-    //      dots[i].className = dots[i].className.replace(" active", "");
-    //  }
-    //  slides[slideIndex - 1].style.display = "block";
-    //  dots[slideIndex - 1].className += " active";
-    setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
+    function runslider() {
+        index = index % dots.length
+
+        $.each(slides, function(x, slide) {
+            if (index == x)
+            // slide.addClass('active forth animate');
+                slide.fadeIn(2000)
+            else {
+                slide.fadeOut(2000);
+                // slide.removeClass('active forth animate');
+
+            }
+
+        });
+        $.each(dots, function(i, dot) {
+            console.log(index + '-' + i)
+
+            if (index == i)
+                dot.addClass('dark')
+            else
+                dot.removeClass('dark')
+        });
+
+        // $(".slider .slides img").each(function() {
+        //     $(this).animate({ left: '-50%' }, 'slow');
+        //     //console.log(0);
+        // });
+
+        index++;
+
+        setTimeout(runslider, 8000)
+    }
+
+
+});

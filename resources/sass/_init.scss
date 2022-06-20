@@ -10,6 +10,7 @@
 }
 
 body {
+    background-color: #fff;
     color: #555;
     font-family: 'Montserrat';
 }
@@ -29,6 +30,11 @@ p {
 
 section {
     margin-block-end: 50px;
+}
+
+section.section-80 {
+    width: 80%;
+    margin: auto;
 }
 
 section.page {
