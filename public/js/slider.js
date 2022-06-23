@@ -40,9 +40,6 @@ $(document).ready(function() {
         // });
 
         index++;
-
         setTimeout(runslider, 8000)
     }
-
-
 });
