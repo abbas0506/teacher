@@ -1,7 +1,4 @@
 .slider {
-    height: 92vh;
-    position: relative;
-
     & .slide {
         position: absolute;
         width: 100%;
@@ -10,23 +7,37 @@
         top: 0;
         z-index: 1;
 
-        // transform: translateX(-100%);
-        // transition: transform 1s ease-in-out;
-        // transition: all 0.5s ease;
         & img {
             width: inherit;
             height: inherit;
         }
 
-        &.active {
-            display: block;
-        }
-
-        &.forth {
+        &.appear {
             z-index: 2;
+            animation: appear 2s;
         }
+        &.disappear {
+            z-index: 2;
+            animation: disappear 2s;
+        }
+    }
+}
 
-        
+@keyframes appear {
+    from {
+        transform: translate(-100%);
+    }
+    to {
+        transform: translate(0);
+    }
+}
+
+@keyframes disappear {
+    from {
+        transform: translate(0);
+    }
+    to {
+        transform: translate(100%);
     }
 }
 
@@ -53,10 +64,10 @@
 
 @keyframes fade {
     from {
-        opacity: .4
+        opacity: 0.4;
     }
 
     to {
-        opacity: 1
+        opacity: 1;
     }
 }

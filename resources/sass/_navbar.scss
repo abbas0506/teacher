@@ -1,15 +1,18 @@
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+}
 .navbar {
     display: flex;
     align-items: center;
-    position: fixed;
-    z-index: 5;
-    top: 0;
     width: 100%;
     list-style: none;
     color: #ddd;
     line-height: 60px;
     padding: 0 24px;
-    background-color: rgb(25, 125, 112);
+    background-color: transparent;
     &.light {
         background-color: #fff;
         color: rgb(25, 125, 112);
@@ -33,9 +36,9 @@
         & .nav-link {
             padding: 0 10px;
             &::after {
-                content: '';
+                content: "";
                 width: 0;
-                background: #ddd;
+                background: rgb(26, 109, 110);
                 display: block;
                 height: 2px;
                 transition: 0.5s;
@@ -78,9 +81,9 @@
             z-index: 5;
             transform: translateX(100%);
             transition: transform 0.5s ease-in-out;
-            &.slide-left {
-                transform: translateX(0) !important;
-            }
+        }
+        & #menu-toggle:checked ~ .nav-links {
+            transform: translate(0);
         }
     }
     .responsive {

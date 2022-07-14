@@ -1,9 +1,12 @@
+@import "variables";
+
 h1 {
     font-size: 4rem;
-    font-weight: 200;
-    margin-top: 100px;
-    margin-bottom: 100px;
-
+    font-weight: 100;
+}
+h2 {
+    font-size: 2.5rem;
+    font-weight: 100;
 }
 
 .text-xl {
@@ -18,26 +21,8 @@ h1 {
     font-size: 2rem;
 }
 
-
 .text-thin {
-
     font-weight: 200;
-}
-
-.mt-100 {
-    margin-top: 100px;
-}
-
-.mt-50 {
-    margin-bottom: 50px;
-}
-
-.mb-100 {
-    margin-bottom: 100px;
-}
-
-.mb-50 {
-    margin-bottom: 50px;
 }
 
 .text-center {
@@ -65,7 +50,10 @@ h1 {
 }
 
 .txt-skyblue {
-    color: #0098FE;
+    color: #0098fe;
+}
+.text-praimary {
+    color: $primary-color;
 }
 
 .txt-8 {
@@ -119,7 +107,7 @@ h1 {
 
 .mt-2,
 .my-2 {
-    margin-top: .75rem;
+    margin-top: 0.75rem;
 }
 
 .mt-3,
@@ -144,7 +132,7 @@ h1 {
 
 .mb-2,
 .my-2 {
-    margin-bottom: .75rem;
+    margin-bottom: 0.75rem;
 }
 
 .mb-3,

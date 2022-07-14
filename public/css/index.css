@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     /* color:#cf4d35;  red: theme color*/
 }
 
@@ -15,49 +15,48 @@ a {
     text-decoration: none;
 }
 
-
 /* FONTS */
 
 @font-face {
-    font-family: 'Nunito';
-    src: url('../fonts/Nunito/Nunito-VariableFont_wght.ttf');
+    font-family: "Nunito";
+    src: url("../fonts/Nunito/Nunito-VariableFont_wght.ttf");
     /* src: url('/public/fonts/Nunito/Nunito-Italic-VariableFont_wght.ttf'); */
 }
 
 @font-face {
-    font-family: 'Syncopate';
-    src: url('../fonts/Syncopate/Syncopate-Regular.ttf');
+    font-family: "Syncopate";
+    src: url("../fonts/Syncopate/Syncopate-Regular.ttf");
 }
 
 @font-face {
-    font-family: 'Quicksand';
-    src: url('../fonts/Quicksand/Quicksand-VariableFont_wght.ttf');
+    font-family: "Quicksand";
+    src: url("../fonts/Quicksand/Quicksand-VariableFont_wght.ttf");
 }
 
 @font-face {
-    font-family: 'Material Icons';
+    font-family: "Material Icons";
     font-style: normal;
-    src: url('../fonts/material/MaterialIconsOutlined-Regular.otf') format("opentype");
+    src: url("../fonts/material/MaterialIconsOutlined-Regular.otf")
+        format("opentype");
     /* For IE6-8 */
 }
 
 @font-face {
-    font-family: 'Montserrat';
-    src: url('../fonts/Montserrat/Montserrat-VariableFont_wght.ttf');
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
 }
 
 .nunito {
-    font-family: 'Nunito', sans-serif;
+    font-family: "Nunito", sans-serif;
 }
 
 .syncopate {
-    font-family: 'Syncopate', sans-serif;
+    font-family: "Syncopate", sans-serif;
 }
 
 .quicksand {
-    font-family: 'Quicksand', sans-serif;
+    font-family: "Quicksand", sans-serif;
 }
-
 
 /* Text styles */
 
@@ -74,7 +73,7 @@ a {
 }
 
 .txt-skyblue {
-    color: #0098FE;
+    color: #0098fe;
 }
 
 .txt-8 {
@@ -128,7 +127,7 @@ a {
 
 .mt-2,
 .my-2 {
-    margin-top: .75rem;
+    margin-top: 0.75rem;
 }
 
 .mt-3,
@@ -153,7 +152,7 @@ a {
 
 .mb-2,
 .my-2 {
-    margin-bottom: .75rem;
+    margin-bottom: 0.75rem;
 }
 
 .mb-3,
@@ -291,10 +290,6 @@ a {
     padding-left: 1.5rem;
 }
 
-.p-5 {
-    padding: 3rem;
-}
-
 .pt-5,
 .py-5 {
     padding-top: 3rem;
@@ -314,7 +309,6 @@ a {
 .px-5 {
     padding-left: 3rem;
 }
-
 
 /* ICON FONT (Feather icon) */
 
@@ -414,7 +408,7 @@ a {
 
 .header {
     /* background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('./images/capture1.png'); */
-    background-image: url('../images/bg/full/banner.png');
+    background-image: url("../images/bg/full/banner.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -447,7 +441,7 @@ nav {
 }
 
 .nav-links ul a {
-    font-family: 'Quicksand', sans-serif;
+    font-family: "Quicksand", sans-serif;
     font-size: 13px;
     list-style: none;
     display: inline-block;
@@ -466,7 +460,7 @@ nav.light .nav-links {
 }
 
 nav.light .nav-links ul a {
-    font-family: 'Syncopate';
+    font-family: "Syncopate";
     color: #033059;
 }
 
@@ -477,7 +471,7 @@ nav.light .nav-links ul a:last-child {
 }
 
 .nav-links ul li::after {
-    content: '';
+    content: "";
     width: 0%;
     background: #ff5421;
     display: block;
@@ -500,7 +494,7 @@ nav .feather-small {
 
 .app-msg,
 .page-centered-msg {
-    font-family: 'Quicksand', sans-serif;
+    font-family: "Quicksand", sans-serif;
     width: 100%;
     position: absolute;
     top: 60%;
@@ -573,7 +567,7 @@ nav .feather-small {
 }
 
 .page-centered-msg h2 {
-    color: #0098FE;
+    color: #0098fe;
     font-size: 1.6rem;
 }
 
@@ -608,7 +602,7 @@ section.offer {
 }
 
 .faq .title {
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-size: 1.8rem;
     margin-top: 20px;
     color: #1a253d;
@@ -620,7 +614,7 @@ section.offer {
 }
 
 .red-underline::after {
-    content: '';
+    content: "";
     background: #ff5421;
     display: block;
     position: relative;
@@ -629,7 +623,6 @@ section.offer {
     top: 10px;
     left: 46%;
 }
-
 
 /* section title */
 
@@ -641,7 +634,7 @@ section .title {
 }
 
 section .content {
-    font-size: 1.0rem;
+    font-size: 1rem;
 }
 
 section .row {
@@ -666,7 +659,6 @@ section .drivethru {
     margin: auto;
     color: #1a253d;
 }
-
 
 /* fancypallets in who section and on services pages */
 
@@ -776,7 +768,6 @@ section .drivethru {
     border-color: #ff5421;
 }
 
-
 /* Services */
 
 .services .col {
@@ -791,15 +782,15 @@ section .drivethru {
 }
 
 .services .col:nth-of-type(1) {
-    background-image: url('../images/banner/services/1.jpg');
+    background-image: url("../images/banner/services/1.jpg");
 }
 
 .services .col:nth-of-type(2) {
-    background-image: url('../images/banner/services/2.jpg');
+    background-image: url("../images/banner/services/2.jpg");
 }
 
 .services .col:nth-of-type(3) {
-    background-image: url('../images/banner/services/3.jpg');
+    background-image: url("../images/banner/services/3.jpg");
 }
 
 .services .col .content {
@@ -830,7 +821,7 @@ section .drivethru {
 }
 
 .services .col .content p {
-    font-family: 'Quicksand', Verdana;
+    font-family: "Quicksand", Verdana;
     font-size: 14px;
     margin-top: 16px;
 }
@@ -850,7 +841,6 @@ section .drivethru {
     opacity: 0;
     bottom: -20%;
 }
-
 
 /* qutoe */
 
@@ -872,7 +862,7 @@ section .drivethru {
 .quote p {
     font-size: 3rem;
     color: rgb(236, 156, 99);
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
 }
 
 .quote p::before,
@@ -969,7 +959,6 @@ section .drivethru {
     height: 90%;
 }
 
-
 /* Footer */
 
 .footer {
@@ -1007,7 +996,7 @@ section .drivethru {
     color: #ff5421;
 }
 
-.newsletter>div {
+.newsletter > div {
     display: flex;
     align-items: center;
     flex-basis: 50%;
@@ -1052,7 +1041,7 @@ section .drivethru {
 }
 
 .footer .col h2 {
-    font-family: 'Quicksand';
+    font-family: "Quicksand";
     font-size: 14px;
     font-weight: bold;
     color: #fff;
@@ -1060,7 +1049,7 @@ section .drivethru {
 }
 
 .footer .col:nth-of-type(2) h2:after {
-    content: '';
+    content: "";
     width: 50px;
     background: #ff5421;
     display: block;
@@ -1091,7 +1080,7 @@ section .drivethru {
 }
 
 .footer .content .contact {
-    flex-basis: 40%
+    flex-basis: 40%;
 }
 
 .footer .feather-small {
@@ -1101,7 +1090,6 @@ section .drivethru {
 .footer .contactus button {
     width: 100%;
 }
-
 
 /* top margin of each row */
 
@@ -1166,28 +1154,28 @@ section .drivethru {
 }
 
 .mini_header.registration {
-    background-image: url('../images/bg/mini/registration.png');
+    background-image: url("../images/bg/mini/registration.png");
 }
 
 .mini_header.services {
-    background-image: url('../images/bg/mini/services.png');
+    background-image: url("../images/bg/mini/services.png");
 }
 
 .mini_header.about {
-    background-image: url('../images/bg/mini/about.png');
+    background-image: url("../images/bg/mini/about.png");
 }
 
 .mini_header.blog {
-    background-image: url('../images/bg/mini/blog.png');
+    background-image: url("../images/bg/mini/blog.png");
 }
 
 .mini_header.contact {
-    background-image: url('../images/bg/mini/contact.png');
+    background-image: url("../images/bg/mini/contact.png");
 }
 
 .header.signup {
     min-height: 100vh;
-    background-image: url('../images/bg/full/2.png');
+    background-image: url("../images/bg/full/2.png");
 }
 
 .frow {
@@ -1257,7 +1245,6 @@ section .drivethru {
     align-items: center;
 }
 
-
 /* sing in */
 
 .auth-section {
@@ -1278,7 +1265,7 @@ section .drivethru {
 
 .site-slogan p {
     color: #e6e6e6b2;
-    font-size: 1.0rem;
+    font-size: 1rem;
     text-align: left;
     margin-top: 60px;
 }
@@ -1286,14 +1273,14 @@ section .drivethru {
 .auth-section .auth-form {
     display: block;
     width: 25%;
-    background-color: #001C31;
+    background-color: #001c31;
     opacity: 0.7;
     padding: 30px;
     margin: auto;
 }
 
 .auth-form .title {
-    color: #0098FE;
+    color: #0098fe;
     font-size: 1.2rem;
     font-weight: 600;
     letter-spacing: 0.1rem;
@@ -1303,7 +1290,7 @@ section .drivethru {
 
 .auth-form input,
 .auth-form select {
-    background-color: #3B515F;
+    background-color: #3b515f;
     outline: none;
     border: none;
     color: whitesmoke;
@@ -1313,7 +1300,7 @@ section .drivethru {
 }
 
 .auth-form input::placeholder {
-    color: #B9BEC4;
+    color: #b9bec4;
 }
 
 .auth-form .hr {
@@ -1321,7 +1308,6 @@ section .drivethru {
     border-style: dashed;
     border-color: #777;
 }
-
 
 /* signup confirmation */
 
@@ -1340,7 +1326,7 @@ section .drivethru {
 }
 
 .signup-confirmation .msg-body .title {
-    color: #0098FE;
+    color: #0098fe;
     font-size: 32px;
 }
 
@@ -1441,5 +1427,5 @@ section .drivethru {
 
 .overlay {
     position: relative;
-    top: 100px
+    top: 100px;
 }
