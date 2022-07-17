@@ -32,7 +32,15 @@ p {
     text-align: center;
 }
 
-.background-image-fixed {
+.narrative {
+    height: 75vh;
+    background-image: url("/images/bg/mini/assessment.png");
+    background-position: center center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.bg-fixed {
     background-attachment: fixed;
 }
 

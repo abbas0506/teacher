@@ -1,15 +1,27 @@
 // flex : col size and responsiveness
 .flex {
     display: flex;
-    &.colx2 div {
+    &.two-cols .col {
         flex-basis: 50%;
     }
-    &.colx3 div {
+    &.three-cols .col {
         flex-basis: 33.33%;
     }
     &.centered {
         justify-content: center;
         align-items: center;
+    }
+    &.align-items-center {
+        align-items: center;
+    }
+
+    & .col {
+        display: flex;
+        flex-direction: column;
+        &.centered {
+            justify-content: center;
+            align-items: center;
+        }
     }
 
     & .w-30 {
@@ -19,11 +31,15 @@
         flex-basis: 70%;
     }
 }
-
-@media only screen and (max-width: 800px) {
-    .flex {
-        &.responsive {
-            display: block;
-        }
-    }
+.block {
+    display: block;
+}
+.space-between {
+    justify-content: space-between;
+}
+.space-around {
+    justify-content: space-around;
+}
+.space-evenly {
+    justify-content: space-evenly;
 }

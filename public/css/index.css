@@ -60,63 +60,63 @@ a {
 
 /* Text styles */
 
-.txt-light {
+.text-light {
     color: #fff;
 }
 
-.txt-red {
+.text-red {
     color: #ff5421;
 }
 
-.txt-blue {
+.text-blue {
     color: #171f32;
 }
 
-.txt-skyblue {
+.text-skyblue {
     color: #0098fe;
 }
 
-.txt-8 {
+.text-8 {
     font-size: 8px;
 }
 
-.txt-10 {
+.text-10 {
     font-size: 10px;
 }
 
-.txt-12 {
+.text-12 {
     font-size: 12px;
 }
 
-.txt-14 {
+.text-14 {
     font-size: 14px;
 }
 
-.txt-16 {
+.text-16 {
     font-size: 16px;
 }
 
-.txt-20 {
+.text-20 {
     font-size: 20px;
 }
 
-.txt-j {
+.text-j {
     text-align: justify;
 }
 
-.txt-l {
+.text-l {
     text-align: left;
 }
 
-.txt-r {
+.text-r {
     text-align: right;
 }
 
-.txt-c {
+.text-c {
     text-align: center;
 }
 
-.txt-b {
+.text-b {
     font-weight: bold;
 }
 
@@ -642,7 +642,7 @@ section .row {
     justify-content: space-between;
 }
 
-section .row.txt-l {
+section .row.text-l {
     display: flex;
     justify-content: left;
 }

@@ -1,7 +1,7 @@
 <div class="content">
    <div class="col about">
       <img src="{{asset('/images/logo/logo.png')}}" alt="">
-      <p class="txt-l">We know which technologies are the best for you. We offer fast track technologies which empower you to directly run into market. </p>
+      <p class="text-l">We know which technologies are the best for you. We offer fast track technologies which empower you to directly run into market. </p>
    </div>
    <div class="col address">
       <h2>ADDRESS</h2>

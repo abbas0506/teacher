@@ -1,0 +1,47 @@
+@media only screen and (max-width: 800px) {
+    .flex {
+        &.responsive {
+            display: flex;
+            flex-direction: column;
+            & .w-30,
+            & .w-70 {
+                width: 100%;
+            }
+        }
+
+        &.col-reverse {
+            flex-direction: column-reverse;
+        }
+        & .col {
+            margin-bottom: 1rem;
+        }
+        & .h-100 {
+            height: auto !important;
+        }
+    }
+    .border-sm-0 {
+        border: none;
+    }
+    .p-sm-0 {
+        padding: 0;
+    }
+    section.w-80 {
+        width: 90%;
+        margin: auto;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+    h2 {
+        font-size: 1.6rem;
+    }
+    h3 {
+        font-size: 0.8rem;
+    }
+    .top-spacer {
+        padding-top: 50px;
+    }
+    .bottom-spacer {
+        padding-bottom: 50px;
+    }
+}
