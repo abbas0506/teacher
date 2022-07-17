@@ -1,51 +1,5 @@
 @import "variables";
 
-.block {
-    display: block;
-}
-
-.flex .cell {
-    display: flex;
-    flex-basis: 33.33%;
-    height: 100%;
-    background-color: #777;
-}
-.box {
-    display: flex;
-    width: 80%;
-    height: 80%;
-    background-color: #02f;
-    margin: auto;
-}
-.box-500 {
-    position: relative;
-    width: 500px;
-    height: 500px;
-    background-color: #aaa;
-}
-.box-500 .centered {
-    left: 50%;
-    top: 50%;
-    transform: translate(50%, -50%);
-}
-.top-right {
-    margin-left: auto;
-    margin-bottom: auto;
-    z-index: 3;
-}
-.bottom-left {
-    margin-right: auto;
-    margin-top: auto;
-    z-index: 2;
-}
-.bg-primary {
-    background-color: $primary-color;
-}
-
-.page,
-.h-100 {
-    height: 100vh;
-}
 section.w-80 {
     width: 80%;
     margin: auto;
@@ -53,9 +7,6 @@ section.w-80 {
 .w-100 {
     width: 100%;
 }
-// .p-5 {
-//     padding: 20px;
-// }
 
 .h-10 {
     height: 10vh;
@@ -67,10 +18,17 @@ section.w-80 {
     height: 30vh;
 }
 
+.h-40 {
+    height: 40vh;
+}
+
 .h-50 {
     height: 50vh;
 }
 
+.h-60 {
+    height: 60vh;
+}
 .h-70 {
     height: 70vh;
 }
@@ -81,19 +39,222 @@ section.w-80 {
 .h-90 {
     height: 90vh;
 }
-
-.mt-100 {
-    margin-top: 100px;
+.h-100 {
+    height: 100vh;
 }
 
-.mt-50 {
-    margin-top: 50px !important;
+.mt-1,
+.my-1 {
+    margin-top: 0.5rem;
 }
-.mb-50 {
-    margin-bottom: 50px !important;
+
+.mt-2,
+.my-2 {
+    margin-top: 0.75rem;
 }
-.mb-100 {
-    margin-bottom: 100px;
+
+.mt-3,
+.my-3 {
+    margin-top: 1rem;
+}
+
+.mt-4,
+.my-4 {
+    margin-top: 1.5rem;
+}
+
+.mt-5,
+.my-5 {
+    margin-top: 2rem;
+}
+
+.mb-1,
+.my-1 {
+    margin-bottom: 0.5rem;
+}
+
+.mb-2,
+.my-2 {
+    margin-bottom: 0.75rem;
+}
+
+.mb-3,
+.my-3 {
+    margin-bottom: 1rem;
+}
+
+.mb-4,
+.my-4 {
+    margin-bottom: 1.5rem;
+}
+
+.mb-5,
+.my-5 {
+    margin-bottom: 2rem;
+}
+
+.p-0 {
+    padding: 0;
+}
+
+.pt-0,
+.py-0 {
+    padding-top: 0;
+}
+
+.pr-0,
+.px-0 {
+    padding-right: 0;
+}
+
+.pb-0,
+.py-0 {
+    padding-bottom: 0;
+}
+
+.pl-0,
+.px-0 {
+    padding-left: 0;
+}
+
+.p-1 {
+    padding: 0.25rem;
+}
+
+.pt-1,
+.py-1 {
+    padding-top: 0.25rem;
+}
+
+.pr-1,
+.px-1 {
+    padding-right: 0.25rem;
+}
+
+.pb-1,
+.py-1 {
+    padding-bottom: 0.25rem;
+}
+
+.pl-1,
+.px-1 {
+    padding-left: 0.25rem;
+}
+
+.p-2 {
+    padding: 0.5rem;
+}
+
+.pt-2,
+.py-2 {
+    padding-top: 0.5rem;
+}
+
+.pr-2,
+.px-2 {
+    padding-right: 0.5rem;
+}
+
+.pb-2,
+.py-2 {
+    padding-bottom: 0.5rem;
+}
+
+.pl-2,
+.px-2 {
+    padding-left: 0.5rem;
+}
+
+.p-3 {
+    padding: 1rem;
+}
+
+.pt-3,
+.py-3 {
+    padding-top: 1rem;
+}
+
+.pr-3,
+.px-3 {
+    padding-right: 1rem;
+}
+
+.pb-3,
+.py-3 {
+    padding-bottom: 1rem;
+}
+
+.pl-3,
+.px-3 {
+    padding-left: 1rem;
+}
+
+.p-4 {
+    padding: 1.5rem;
+}
+
+.pt-4,
+.py-4 {
+    padding-top: 1.5rem;
+}
+
+.pr-4,
+.px-4 {
+    padding-right: 1.5rem;
+}
+
+.pb-4,
+.py-4 {
+    padding-bottom: 1.5rem;
+}
+
+.pl-4,
+.px-4 {
+    padding-left: 1.5rem;
+}
+
+.p-5 {
+    padding: 3rem;
+}
+
+.pt-5,
+.py-5 {
+    padding-top: 3rem;
+}
+
+.pr-5,
+.px-5 {
+    padding-right: 3rem;
+}
+
+.pb-5,
+.py-5 {
+    padding-bottom: 3rem;
+}
+
+.pl-5,
+.px-5 {
+    padding-left: 3rem;
+}
+
+.mx-100 {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+// borders
+.border-right {
+    border-right: 1px solid;
+}
+.border-top {
+    border-top: 1px solid;
+}
+
+.border-bottom {
+    border-bottom: 1px solid;
+}
+.border-thick {
+    border-width: 3px;
 }
 
 .flexbox-50 {
@@ -106,4 +267,37 @@ section.w-80 {
 }
 .hidden {
     display: none;
+}
+.top-spacer {
+    padding-top: 100px;
+}
+.bottom-spacer {
+    padding-bottom: 100px;
+}
+.circular-50 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.collapsible {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+.icon-wrapper {
+    transform: rotate(0);
+    transition: all 0.5s ease;
+}
+
+#faq {
+    &:checked ~ .collapsible {
+        max-height: 100%;
+    }
+    &:checked ~ .flex label .icon-wrapper {
+        transform: rotate(180deg);
+    }
 }
