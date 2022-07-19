@@ -23,7 +23,7 @@
         background-color: transparent;
         transition: border-color 0.2s;
         &:not(:placeholder-shown) ~ label {
-            // color: rgb(113, 112, 148);
+            color: $primary-color;
             top: -25px;
             padding: 0px 2px;
             left: 0;

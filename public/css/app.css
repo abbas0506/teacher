@@ -56,6 +56,14 @@ section.w-80 {
   width: 100%;
 }
 
+.w-80 {
+  width: 80%;
+}
+
+.w-70 {
+  width: 70%;
+}
+
 .h-10 {
   height: 10vh;
 }
@@ -324,11 +332,6 @@ section.w-80 {
   display: none;
 }
 
-.icon-large {
-  width: 50px;
-  height: 50px;
-}
-
 .top-spacer {
   padding-top: 100px;
 }
@@ -587,8 +590,20 @@ section.w-80 {
   justify-content: center;
   align-items: center;
 }
+.flex .w-25 {
+  flex-basis: 25%;
+}
 .flex .w-30 {
   flex-basis: 30%;
+}
+.flex .w-40 {
+  flex-basis: 40%;
+}
+.flex .w-50 {
+  flex-basis: 50%;
+}
+.flex .w-60 {
+  flex-basis: 60%;
 }
 .flex .w-70 {
   flex-basis: 70%;
@@ -636,16 +651,16 @@ h2 {
   margin-bottom: 1rem;
 }
 
-.text-xl {
-  font-size: 5rem;
-}
-
-.text-l {
+.text-large {
   font-size: 3rem;
 }
 
-.text-m {
+.text-medium {
   font-size: 1.5rem;
+}
+
+.text-small {
+  font-size: 0.8rem;
 }
 
 .text-thin {
@@ -723,6 +738,10 @@ h2 {
   color: #fff;
 }
 
+.text-smoke {
+  color: #ddd;
+}
+
 .text-red {
   color: #ff5421;
 }
@@ -767,6 +786,11 @@ h2 {
   border-color: #86f2fd;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 .fancyinput {
   position: relative;
 }
@@ -796,6 +820,7 @@ h2 {
   transition: border-color 0.2s;
 }
 .fancyinput input:not(:-moz-placeholder-shown) ~ label, .fancyinput textarea:not(:-moz-placeholder-shown) ~ label {
+  color: #027682;
   top: -25px;
   padding: 0px 2px;
   left: 0;
@@ -808,6 +833,7 @@ h2 {
   background-color: transparent;
 }
 .fancyinput input:not(:-ms-input-placeholder) ~ label, .fancyinput textarea:not(:-ms-input-placeholder) ~ label {
+  color: #027682;
   top: -25px;
   padding: 0px 2px;
   left: 0;
@@ -820,6 +846,7 @@ h2 {
   background-color: transparent;
 }
 .fancyinput input:not(:placeholder-shown) ~ label, .fancyinput textarea:not(:placeholder-shown) ~ label {
+  color: #027682;
   top: -25px;
   padding: 0px 2px;
   left: 0;
@@ -1022,10 +1049,12 @@ h2 {
 
 .btn {
   padding: 0.6rem 1rem;
+  text-align: center;
   border: none;
 }
 .btn.btn-primary {
   background-color: #027682;
+  color: #bbb;
 }
 .btn.btn-primary:hover {
   background-color: #028d9b;
@@ -1038,9 +1067,14 @@ h2 {
   height: 24px;
 }
 
+.icon-medium {
+  width: 32px;
+  height: 32px;
+}
+
 .icon-large {
-  width: 48px;
-  height: 48px;
+  width: 64px;
+  height: 64px;
 }
 
 .icon-xlarge {
@@ -1066,6 +1100,9 @@ h2 {
   }
   .flex .col {
     margin-bottom: 1rem;
+  }
+  .flex .col.centered.align-sm-left {
+    align-items: flex-start;
   }
   .flex .h-100 {
     height: auto !important;
@@ -1094,5 +1131,12 @@ h2 {
   }
   .bottom-spacer {
     padding-bottom: 50px;
+  }
+  .illustration {
+    width: 50%;
+  }
+  .icon-xlarge {
+    width: 50px;
+    height: 50px;
   }
 }

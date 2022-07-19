@@ -24,8 +24,20 @@
         }
     }
 
+    & .w-25 {
+        flex-basis: 25%;
+    }
     & .w-30 {
         flex-basis: 30%;
+    }
+    & .w-40 {
+        flex-basis: 40%;
+    }
+    & .w-50 {
+        flex-basis: 50%;
+    }
+    & .w-60 {
+        flex-basis: 60%;
     }
     & .w-70 {
         flex-basis: 70%;
